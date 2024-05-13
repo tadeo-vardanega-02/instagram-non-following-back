@@ -16,7 +16,7 @@ class InstagramAnalyzer:
     def extract_html_files(self):
         zip_file_path = self.find_zip_file()
         if zip_file_path is None:
-            raise FileNotFoundError("No se encontraron archivos ZIP en el directorio actual.")
+            raise FileNotFoundError("No ZIP files were found in the current directory.")
         
         following_data = None
         followers_data = None
